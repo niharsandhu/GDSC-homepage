@@ -1,0 +1,27 @@
+.pastevents-page header {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/firstimage.jpeg);
+}
+.pastevents-page .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    height: 250px; 
+    width: 100%;/* Ensure full height for the square effect */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.card-size {
+    aspect-ratio: 1 / 1; /* Ensures square shape */
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
