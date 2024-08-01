@@ -2,7 +2,7 @@
     background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url('../../utils/images/blog-page-header.jpg');
     background-size: cover;
     background-position: center;
-    height: 380px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
 }
 
 .card {

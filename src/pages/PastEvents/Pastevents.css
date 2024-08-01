@@ -1,5 +1,6 @@
 .pastevents-page header {
     background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/firstimage.jpeg);
+    height: 300px;
 }
 .pastevents-page .card {
     border: none;

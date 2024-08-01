@@ -80,16 +80,16 @@ function App() {
                     <Link to="/" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Home</li>
                     </Link>
-                    <Link to="/Pastevents" className='text-decoration-none text-danger'>
+                    <Link to="/" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Past Events</li>
                     </Link>
-                    <Link to="/about" className='text-decoration-none text-danger'>
+                    <Link to="/" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>About us</li>
                     </Link>
-                    <Link to="/blog" className='text-decoration-none text-danger'>
+                    <Link to="/" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Organisers</li>
                     </Link>
-                    <Link to="/contact" className='text-decoration-none text-danger'>
+                    <Link to="/" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Get In Touch</li>
                     </Link>
                   </ul>

@@ -4,6 +4,7 @@ import './Home.css';
 import ChooseSection from '../../components/ChooseSection/ChooseSection';
 import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
 import Blog from '../Blog/Blog';
+import Pastevents from '../PastEvents/Pastevents';
 
 const Home = () => {
   return (
@@ -36,7 +37,7 @@ const Home = () => {
         <br />
         <Blog />
         <br />
-        <FaqAccordion />
+       <Pastevents/>
         <br />
       </main>
     </div>
