@@ -2,14 +2,13 @@ import React from 'react';
 import './Home.css';
 
 import ChooseSection from '../../components/ChooseSection/ChooseSection';
-import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
 import Blog from '../Blog/Blog';
 import Pastevents from '../PastEvents/Pastevents';
 
 const Home = () => {
   return (
     <div className='home-page'>
-      <header className='h-300 d-flex align-items-center text-light'>
+      <header className='d-flex align-items-center text-light'>
         <div className='container d-flex flex-column align-items-center'>
           <h1 className='text-center fw-bolder'>Chitkara University Rajpura</h1>
           <p>1188 Group Members</p>
@@ -32,18 +31,19 @@ const Home = () => {
         </div>
       </header>
       <main>
-        <br />
+        <div style={{ margin: '2rem 0' }} />
         <ChooseSection />
-        <br />
+        <div style={{ margin: '2rem 0' }} />
         <Blog />
-        <br />
-       <Pastevents/>
-        <br />
+        <div style={{ margin: '2rem 0' }} />
+        <Pastevents />
+        <div style={{ margin: '2rem 0' }} />
       </main>
     </div>
   );
 }
 
 export default Home;
+
 
 

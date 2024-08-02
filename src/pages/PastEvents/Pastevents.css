@@ -1,14 +1,16 @@
+/* Base Styles for Pastevents Page */
 .pastevents-page header {
     background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/firstimage.jpeg);
-    height: 300px;
+    height: 18.75rem; /* 300px converted to rem */
 }
+
 .pastevents-page .card {
     border: none;
     border-radius: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* 4px 8px to rem */
     transition: transform 0.3s ease-in-out;
-    height: 250px; 
-    width: 100%;/* Ensure full height for the square effect */
+    height: 15.625rem; /* 250px converted to rem */
+    width: 100%;
 }
 
 .card-img {
@@ -25,4 +27,52 @@
 
 .card:hover {
     transform: scale(1.05);
+}
+
+/* Media Queries for Different Screen Sizes */
+
+
+/* Laptops (992px to 1200px) */
+@media only screen and  (min-width: 62rem) { /* 992px to 1000px / 16px base font-size */
+    .pastevents-page header {
+        height: 24rem; /* 300px converted to rem */
+    }
+
+    .pastevents-page .card {
+        height: 18.75rem; /* 250px converted to rem */
+    }
+
+    .card-img {
+        height: 18.75rem; /* Match the card height */
+    }
+}
+
+/* Tablets (768px to 992px) */
+@media only screen and (max-width: 48rem) and (min-width: 48rem) { /* 768px to 800px / 16px base font-size */
+    .pastevents-page header {
+        height: 15rem; /* 240px converted to rem */
+    }
+
+    .pastevents-page .card {
+        height: 12.5rem; /* 200px converted to rem */
+    }
+
+    .card-img {
+        height: 12.5rem; /* Match the card height */
+    }
+}
+
+/* Mobile (up to 768px) */
+@media only screen and (max-width: 48rem) { /* 768px / 16px base font-size */
+    .pastevents-page header {
+        height: 12rem; /* 192px converted to rem */
+    }
+
+    .pastevents-page .card {
+        height: 10rem; /* 160px converted to rem */
+    }
+
+    .card-img {
+        height: 10rem; /* Match the card height */
+    }
 }

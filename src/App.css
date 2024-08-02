@@ -1,12 +1,13 @@
+/* General Styles */
 .App {
   text-align: center;
 }
-
 
 h1, h2, h3, p, a {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Header Styles */
 header h1 {
   font-size: 4rem;
 }
@@ -24,18 +25,21 @@ nav .navbar-toggler:focus {
   box-shadow: none;
 }
 
+/* Hover Effect */
 .scale-hover-effect {
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
 .scale-hover-effect:hover {
   transform: scale(1.05);
 }
 
+/* Height Utility Class */
 .height-75 {
   height: 75vh;
 }
 
+/* Footer Styles */
 .footer-social-icons li:hover svg {
   fill: #212529;
 }
@@ -44,6 +48,7 @@ nav .navbar-toggler:focus {
   color: #212529;
 }
 
+/* Media Queries for Responsiveness */
 @media only screen and (max-width: 992px) {
   #basic-navbar-nav {
     background-color: #ffffff;
@@ -60,10 +65,18 @@ nav .navbar-toggler:focus {
   header h1 {
     font-size: 3rem;
   }
+
+  .navbar .nav-link {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   header h1 {
     font-size: 2rem;
+  }
+
+  .navbar .nav-link {
+    font-size: 10px;
   }
 }

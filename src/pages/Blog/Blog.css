@@ -1,36 +1,94 @@
+/* Blog Page Header */
 .blog-page header {
     background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url('../../utils/images/blog-page-header.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px; /* Adjust as needed */
+    height: 18.75rem; /* 300px to rem */
 }
 
+/* Card Styles */
 .card {
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px to rem */
     overflow: hidden;
     background-color: #f8f9fa;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* 0 4px 8px to rem */
     transition: transform 0.3s ease-in-out;
-    height: 350px; /* Fixed height for card */
+    height: 21.875rem; /* 350px to rem */
     display: flex;
     flex-direction: column;
 }
 
+/* Card Image */
 .card-img {
     width: 100%;
-    height: 100px; /* Fixed height for image */
+    height: 6.25rem; /* 100px to rem */
     object-fit: cover;
-    border-bottom: 2px solid #ddd; /* Optional: Adds a separator line */
+    border-bottom: 0.125rem solid #ddd; /* 2px to rem */
 }
 
-
-   
-
+/* Text Muted */
 .text-muted {
     color: #6c757d;
-    font-size: small;
+    font-size: 0.875rem; /* Small text size in rem */
 }
 
+/* Font Size 4 */
 .fs-4 {
     font-size: 1.25rem; /* Adjust size as needed */
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 992px) {
+    .blog-page header {
+        height: 15rem; /* Adjust as needed */
+    }
+    .card {
+        height: 18.75rem; /* Adjust as needed */
+    }
+    .card-img {
+        height: 5rem; /* Adjust as needed */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-page header {
+        height: 12.5rem; /* Adjust as needed */
+    }
+    .card {
+        height: 16.25rem; /* Adjust as needed */
+    }
+    .card-img {
+        height: 4.375rem; /* Adjust as needed */
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .blog-page header {
+        height: 10rem; /* Adjust as needed */
+    }
+    .card {
+        height: 13.75rem; /* Adjust as needed */
+    }
+    .card-img {
+        height: 3.75rem; /* Adjust as needed */
+    }
+}
+
+/* Styles for large laptops (greater than 1200px) */
+@media only screen and (min-width: 1200px) {
+    .blog-page header {
+        height: 24rem; /* Increase height for large laptops */
+    }
+    .card {
+        height: 25rem; /* Increase height for large laptops */
+    }
+    .card-img {
+        height: 7.5rem; /* Increase height for large laptops */
+    }
+    .text-muted {
+        font-size: 1rem; /* Increase text size for large laptops */
+    }
+    .fs-4 {
+        font-size: 1.5rem; /* Increase font size for large laptops */
+    }
 }
